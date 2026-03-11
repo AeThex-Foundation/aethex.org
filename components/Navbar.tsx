@@ -15,7 +15,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-surface-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-surface-900/95 backdrop-blur-md border-b border-surface-800">
       <div className="container-wide mx-auto flex items-center justify-between px-6 py-4 lg:px-12">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
@@ -24,7 +24,7 @@ export default function Navbar() {
             <span className="text-white font-display font-bold text-sm">Ae</span>
           </div>
           <div className="font-display">
-            <span className="font-bold text-surface-900 tracking-tight">AeThex</span>
+            <span className="font-bold text-white tracking-tight">AeThex</span>
             <span className="text-foundation-500 font-medium ml-1">Foundation</span>
           </div>
         </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-surface-700 hover:text-foundation-500 transition-colors"
+              className="text-sm font-medium text-surface-300 hover:text-white transition-colors"
             >
               {link.label}
             </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2 text-surface-700"
+          className="md:hidden p-2 text-surface-300"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle navigation"
         >
@@ -57,12 +57,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-surface-100 bg-white px-6 pb-6">
+        <div className="md:hidden border-t border-surface-800 bg-surface-900 px-6 pb-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-3 text-sm font-medium text-surface-700 hover:text-foundation-500 border-b border-surface-50"
+              className="block py-3 text-sm font-medium text-surface-300 hover:text-white border-b border-surface-800"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}

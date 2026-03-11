@@ -5,34 +5,36 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-surface-50">
-        {/* Subtle grid pattern */}
+      <section className="relative overflow-hidden bg-surface-900 min-h-[88vh] flex items-center">
+        {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
+              'linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)',
             backgroundSize: '64px 64px',
           }}
         />
-        {/* Red accent glow */}
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-foundation-500/5 rounded-full blur-3xl" />
+        {/* Primary red glow — top right */}
+        <div className="absolute -top-60 -right-60 w-[800px] h-[800px] bg-foundation-500/20 rounded-full blur-3xl pointer-events-none" />
+        {/* Secondary glow — bottom left */}
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-foundation-700/12 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative section-padding container-wide mx-auto">
+        <div className="relative section-padding container-wide mx-auto w-full">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-foundation-50 text-foundation-600 rounded-full px-4 py-1.5 text-xs font-medium mb-8 border border-foundation-100">
+            <div className="inline-flex items-center gap-2 bg-foundation-500/10 text-foundation-400 rounded-full px-4 py-1.5 text-xs font-medium mb-8 border border-foundation-500/20">
               <span className="w-1.5 h-1.5 bg-foundation-500 rounded-full animate-pulse" />
               Nonprofit &middot; Open Source &middot; Community-Driven
             </div>
 
-            <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-surface-900 leading-[1.08] tracking-tight mb-6">
+            <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white leading-[1.08] tracking-tight mb-6">
               Infrastructure for
               <span className="text-foundation-500"> digital</span>
               <br />
               <span className="text-foundation-500">civilization</span>.
             </h1>
 
-            <p className="text-lg md:text-xl text-surface-600 leading-relaxed max-w-2xl mb-10">
+            <p className="text-lg md:text-xl text-surface-400 leading-relaxed max-w-2xl mb-10">
               The AeThex Foundation builds the open-source tools, educational
               programs, and community resources that power the next generation of
               digital creators — freely and for everyone.
@@ -42,7 +44,7 @@ export default function Home() {
               <Link href="/programs" className="btn-primary">
                 Explore Programs <ArrowRight size={16} />
               </Link>
-              <Link href="/mission" className="btn-secondary">
+              <Link href="/mission" className="inline-flex items-center gap-2 border-2 border-surface-600 text-surface-300 px-6 py-3 rounded-lg font-display font-medium text-sm tracking-wide hover:bg-surface-800 hover:text-white transition-all duration-200">
                 Our Mission
               </Link>
             </div>

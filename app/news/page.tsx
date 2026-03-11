@@ -22,15 +22,16 @@ export default function NewsPage() {
   return (
     <>
       {/* ── Page Header ───────────────────────────────────────── */}
-      <section className="section-padding bg-surface-50 border-b border-surface-200">
-        <div className="container-narrow mx-auto">
-          <p className="text-foundation-500 font-display font-semibold text-sm uppercase tracking-widest mb-4">
+      <section className="relative overflow-hidden section-padding bg-surface-900 border-b border-surface-800">
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-foundation-500/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative container-narrow mx-auto">
+          <p className="text-foundation-400 font-display font-semibold text-sm uppercase tracking-widest mb-4">
             News
           </p>
-          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-surface-900 leading-tight mb-6">
+          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight mb-6">
             Updates &amp; Announcements
           </h1>
-          <p className="text-lg text-surface-600 leading-relaxed max-w-2xl">
+          <p className="text-lg text-surface-400 leading-relaxed max-w-2xl">
             The latest from the AeThex Foundation — program launches,
             engineering updates, and community stories.
           </p>
