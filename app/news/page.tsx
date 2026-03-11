@@ -28,7 +28,7 @@ export default function NewsPage() {
           <p className="text-foundation-400 font-display font-semibold text-sm uppercase tracking-widest mb-4">
             News
           </p>
-          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight mb-6">
+          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight uppercase tracking-wide mb-6">
             Updates &amp; Announcements
           </h1>
           <p className="text-lg text-surface-400 leading-relaxed max-w-2xl">

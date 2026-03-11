@@ -19,13 +19,15 @@ export default function Navbar() {
       <div className="container-wide mx-auto flex items-center justify-between px-6 py-4 lg:px-12">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-foundation-500 rounded-lg flex items-center justify-center
-                          group-hover:bg-foundation-600 transition-colors">
-            <span className="text-white font-display font-bold text-sm">Ae</span>
+          <div
+            className="w-9 h-9 bg-foundation-500 group-hover:bg-foundation-600 transition-colors flex items-center justify-center"
+            style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}
+          >
+            <span className="text-white font-display font-bold text-xs">Ae</span>
           </div>
-          <div className="font-display">
-            <span className="font-bold text-white tracking-tight">AeThex</span>
-            <span className="text-foundation-500 font-medium ml-1">Foundation</span>
+          <div className="font-display leading-none">
+            <span className="font-extrabold text-white tracking-widest uppercase text-sm block">AETHEX</span>
+            <span className="text-foundation-400 font-medium tracking-wider uppercase text-[10px] block">Foundation</span>
           </div>
         </Link>
 

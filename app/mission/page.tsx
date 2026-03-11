@@ -17,7 +17,7 @@ export default function MissionPage() {
           <p className="text-foundation-400 font-display font-semibold text-sm uppercase tracking-widest mb-4">
             Our Mission
           </p>
-          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight mb-6">
+          <h1 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight uppercase tracking-wide mb-6">
             Building the infrastructure
             <br />
             everyone deserves.

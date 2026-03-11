@@ -27,7 +27,7 @@ export default function Home() {
               Nonprofit &middot; Open Source &middot; Community-Driven
             </div>
 
-            <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white leading-[1.08] tracking-tight mb-6">
+            <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-white leading-[1.08] tracking-widest uppercase mb-6">
               Infrastructure for
               <span className="text-foundation-500"> digital</span>
               <br />
