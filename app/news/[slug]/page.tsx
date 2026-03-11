@@ -90,34 +90,35 @@ export default function PostPage({ params }: Props) {
   return (
     <>
       {/* Header */}
-      <section className="section-padding bg-surface-50 border-b border-surface-200">
-        <div className="container-narrow mx-auto">
+      <section className="relative overflow-hidden section-padding bg-surface-900 border-b border-surface-800">
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-foundation-500/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative container-narrow mx-auto">
           <Link
             href="/news"
-            className="inline-flex items-center gap-2 text-sm text-surface-500 hover:text-foundation-500 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-sm text-surface-400 hover:text-foundation-400 transition-colors mb-8"
           >
             <ArrowLeft size={16} />
             Back to News
           </Link>
 
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-medium text-foundation-500 bg-foundation-50 px-3 py-1 rounded-full">
+            <span className="text-xs font-medium text-foundation-400 bg-foundation-500/10 border border-foundation-500/20 px-3 py-1 rounded-full">
               {post.category}
             </span>
-            <span className="text-xs text-surface-400">{formatDate(post.date)}</span>
+            <span className="text-xs text-surface-500">{formatDate(post.date)}</span>
           </div>
 
-          <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-surface-900 leading-tight mb-6">
+          <h1 className="font-display font-extrabold text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6">
             {post.title}
           </h1>
 
-          <p className="text-lg text-surface-600 leading-relaxed max-w-2xl">
+          <p className="text-lg text-surface-400 leading-relaxed max-w-2xl">
             {post.excerpt}
           </p>
 
           {post.author && (
             <p className="mt-6 text-sm text-surface-500">
-              By <span className="font-medium text-surface-700">{post.author}</span>
+              By <span className="font-medium text-surface-300">{post.author}</span>
             </p>
           )}
         </div>

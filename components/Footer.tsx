@@ -27,12 +27,15 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 bg-foundation-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-display font-bold text-sm">Ae</span>
+              <div
+                className="w-9 h-9 bg-foundation-500 flex items-center justify-center shrink-0"
+                style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}
+              >
+                <span className="text-white font-display font-bold text-xs">Ae</span>
               </div>
-              <div className="font-display">
-                <span className="font-bold text-white tracking-tight">AeThex</span>
-                <span className="text-foundation-400 font-medium ml-1">Foundation</span>
+              <div className="font-display leading-none">
+                <span className="font-extrabold text-white tracking-widest uppercase text-sm block">AETHEX</span>
+                <span className="text-foundation-400 font-medium tracking-wider uppercase text-[10px] block">Foundation</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-surface-400 max-w-xs">
